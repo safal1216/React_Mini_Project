@@ -2,14 +2,14 @@ import './App.css';
 import Hero from './Hero';
 import Navbar from './navbar';
 import data from './data';
-import card from './card';
+import Card from './card';
 
 
 
 function App() {
   const card=data.map(item=>{
     return (
-      <card 
+      <Card 
       key={item.id}
       {...item}
       />
