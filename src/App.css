@@ -28,14 +28,19 @@ section {
 }
 
 .hero--photo {
-    max-width: 400px;
+    max-width: 600px;
     align-self: center;
+    padding-left: 5%;
 }
 
 .hero--header {
     margin-bottom: 16px;
+    padding-left: 1%;
+    background-color: grey;
+    width: 15%;
 }
 
 .hero--text {
     margin-top: 0;
+    padding-left: 2%;
 }
