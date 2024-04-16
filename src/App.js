@@ -1,15 +1,28 @@
 import './App.css';
 import Hero from './Hero';
 import Navbar from './navbar';
+import data from './data';
+import card from './card';
+
 
 
 function App() {
+  const card=data.map(item=>{
+    return (
+      <card 
+      key={item.id}
+      {...item}
+      />
+    )
+  })
+    
   return (
     <>
-      <header className="App-header">
         <Navbar />
         <Hero />
-      </header>
+        <section className="cards-list">
+          {card}
+        </section>
     </>
   );
 }
